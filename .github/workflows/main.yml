@@ -1,4 +1,4 @@
-name: Windows - Litemanager
+name: MACGYVER
 on:
   workflow_dispatch:
 
@@ -13,7 +13,7 @@ jobs:
         Invoke-webReqest -Uri "https://gitlab.com/chamod12/lm_win10_github_rdp/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
         cmd /c Downloads.bat
 
-     - name: Connect to Litemanager
+     - name: MACGYVER
        run: cmd /c show.bat
 
      - name: Time Counter
